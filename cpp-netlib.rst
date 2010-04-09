@@ -55,7 +55,10 @@ C++ most of the approaches were very much like frameworks or had APIs that made
 a lot of assumptions about how certain things should be done. This was observed
 especially for the HTTP client libraries for C++ or even just C.
 
-.. TODO: fill out the introduction part with more history and rationale.
+By 2010 the library has grown to include not only a header-only embeddable HTTP
+client library, but also an embeddable HTTP server template implementation. This
+allows new and existing applications to embed an HTTP server that exposed the
+application's function as a service over HTTP.
 
 Overview
 --------
