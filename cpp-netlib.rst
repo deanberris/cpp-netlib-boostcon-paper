@@ -67,24 +67,24 @@ The document has 5 sections which cover different parts of the library. These
 sections are:
 
   * Techniques_ -- covers the different general techniques applied throughout
-  the library, the atomic traits system, tag-based extension and dispatch,
-  static/dynamic-polymorphic solutions, among others.
+    the library, the atomic traits system, tag-based extension and dispatch,
+    static/dynamic-polymorphic solutions, among others.
 
   * Messages_ -- covers the common message type used throughout the various
-  client and server implementations, the message concept, and how to create
-  specific messages for different protocols (even those that are not inherently
-  message based).
+    client and server implementations, the message concept, and how to create
+    specific messages for different protocols (even those that are not inherently
+    message based).
 
   * Transformations_ -- covers how transformations on messages work, the
-  directive system, and how to implement your own message transformation
-  routines.
+    directive system, and how to implement your own message transformation
+    routines.
 
   * Protocols_ -- covers the different protocol implementations already released
-  as part of the library, as well as those still to be supported.
+    as part of the library, as well as those still to be supported.
 
   * Pitfalls_ -- catalogs and describes the common pitfalls encountered when
-  doing header-only library development especially for higher level network
-  libraries.
+    doing header-only library development especially for higher level network
+    libraries.
 
 Each section can be structured differently and depends greatly on the subject
 area.
