@@ -34,7 +34,7 @@ specialized on the tag ``default_`` whose nested ``type`` result is the type
     struct default_;
 
     template <>
-    struct string_<default_> {
+    struct string<default_> {
         typedef std::string type;
     };
 
@@ -46,7 +46,7 @@ the context of the type ``foo``. In code this would translate into:
 
     template <class Tag>
     struct foo {
-        typedef typename string<Tag>::type  string_type;
+        typedef typename string<Tag>::type string_type;
 
         // .. use string_type where you need a string.
     };
@@ -63,10 +63,10 @@ like ``foo`` based on the specialization of the tag. Whole type function
 families can be defined on tags where they are supported and ignored in cases
 where they are not.
 
-To illustrate let's define a new tag ``swappable`` and the new type ``bar``.
-Given the above definition of ``foo``, we'd want to make the
-``swappable``-tagged ``foo`` define a ``swap`` function that extends the original 
-``default_``-tagged ``foo``. In code this would look like:
+To illustrate let's define a new tag ``swappable``. Given the above definition 
+of ``foo``, we'd want to make the ``swappable``-tagged ``foo`` define a ``swap`` 
+function that extends the original ``default_``-tagged ``foo``. In code this 
+would look like:
 
 ::
 
