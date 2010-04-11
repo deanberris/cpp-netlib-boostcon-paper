@@ -5,4 +5,5 @@ section covers these recurring techniques -- where appropriate the inspiration
 for the technique is also cited.
 
 .. include:: techniques/tag-metafunctions.rst
+.. include:: techniques/directives.rst
  
