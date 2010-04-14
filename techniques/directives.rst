@@ -62,7 +62,7 @@ The rationale for implementing directives include the following:
     immediate attention. Adding this layer of indirection also allows for
     changing the underlying implementations while maintaining the same syntactic
     and semantic properties.
-  * **Flexibiliy** - by allowing the creation of directives that are
+  * **Flexibility** - by allowing the creation of directives that are
     independent from the target object's type, generic operations can be applied
     based on the concept being modeled by the target type. The flexibility also 
     afforded comes in the directive's generator function, which can also generate

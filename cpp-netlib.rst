@@ -1,7 +1,8 @@
 ======================================================================
 Techniques in Flexible Header-Only C++ Network Library Implementations
 ======================================================================
-:Author: Dean Michael Berris <mikhailberis@gmail.com>
+:Author: Dean Michael Berris <mikhailberis@gmail.com>, 
+         Glyn Matthews <glyn.matthews@gmail.com>
 :Date: April 8, 2010
 :Description: A look into the techniques used in the cpp-netlib implementation.
 
@@ -42,7 +43,7 @@ no building of external libraries. Specifically, there were none that were open
 source, liberally licensed, and allowed you to use them directly in your
 programs without linking to external static or shared libraries.
 
-The stated scope of the library included the requriement to implement everything
+The stated scope of the library included the requirement to implement everything
 as header-only C++ components. This meant that the code would rely on template
 metaprogramming and as much static polymorphism [#]_ as possible to achieve the
 same level of quality that the dynamic non-header-only libraries were providing.
