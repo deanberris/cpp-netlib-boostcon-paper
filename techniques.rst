@@ -6,4 +6,5 @@ for the technique is also cited.
 
 .. include:: techniques/tag-metafunctions.rst
 .. include:: techniques/directives.rst
- 
+.. include:: techniques/static-dynamic.rst
+    

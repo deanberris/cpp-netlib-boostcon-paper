@@ -3,7 +3,7 @@ Directives
 ``````````
 
 The library also uses a technique for allowing message-passing semantics in a
-chainable fashion in the form of directives. The basic concept for directives
+chain-able fashion in the form of directives. The basic concept for directives
 is in a general sense, it is an encapsulated transformation that can be applied
 to objects that abide by the directive protocol.
 
