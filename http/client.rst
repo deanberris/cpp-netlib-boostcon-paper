@@ -37,3 +37,4 @@ trivially simple:
     http::request request("http://www.boost.org/");
     http::response response = client.get(request);
 
+Accessing data from ``http::response`` is also done using directives.
