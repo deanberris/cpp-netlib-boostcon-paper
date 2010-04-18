@@ -8,15 +8,32 @@ The cpp-netlib HTTP client is composed of three template classes:
 
     namespace http {
         template <class Tag> basic_request;
-        typedef basic_request<default_> request;
         template <class Tag> basic_response;
-        typedef basic_response<default_> response;
         template <class Tag> basic_client;
+        typedef basic_request<default_> request;
+        typedef basic_response<default_> response;
         typedef basic_client<default_> client;
     }
 
-``request`` and ``response`` each model the message concept.
+``basic_request`` and ``basic_response`` each model the message concept. They
+make use of directives to set and get headers. The code snippet below shows how
+to set the HTTP header field "Connection" with the option "close" using the
+DSEL described in the directives section:
 
-TODO: message, specialized request & responses.
-TODO: client, embeddable, light-weight and extensible (using tags)
+::
+
+    using namespace boost::network;
+    http::request request("http://www.boost.org/");
+    request << header("Connection", "close");
+
+The ``basic_client`` implements all HTTP methods as member functions (HEAD,
+GET, POST, PUT, DELETE).  Therefore, the code to make an HTTP request looks
+trivially simple:
+
+::
+
+    using namespace boost::network;
+    http::client client;
+    http::request request("http://www.boost.org/");
+    http::response response = client.get(request);
 
