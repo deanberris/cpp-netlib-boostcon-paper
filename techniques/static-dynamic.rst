@@ -17,7 +17,7 @@ connection or an SSL-wrapped TCP connection.
 The general pattern or technique is to combine tag-based dispatch with a
 strategy factory, all while not requiring any externally built libraries. Doing
 it in a header-only library requires a little creativity and additional layers
-of indirection that you otherwise will not need for a library with extnally
+of indirection that you otherwise will not need for a library with externally
 built static/dynamic libraries.
 
 First we define the base type which we want to support dynamic behavior with.
@@ -53,7 +53,7 @@ an input, we create a strategy factory function:
         return ptr;
     }
 
-The using the strategy factory function looks like this:
+The strategy factory function looks like this:
 
 ::
 

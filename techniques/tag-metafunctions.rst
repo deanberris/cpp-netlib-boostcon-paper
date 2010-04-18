@@ -95,7 +95,7 @@ whole extension mechanism static and yet flexible.
 
 The only drawback with this approach is the verbosity at which extensions and
 specializations are to be done which introduces additional pressure on the
-compiler at compile-time computations. Becase this technique relies heavily on
+compiler at compile-time computations. Because this technique relies heavily on
 the C++ template mechanism, compile times may be greatly affected.
 
 The potential for tag and implementation explosion is also high. If the
