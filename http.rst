@@ -1,11 +1,10 @@
 
 The cpp-netlib provides full support for a configurable HTTP client and server.
 
-TODO: code structure, tags, traits
-TODO: uri, parser using directives
-TODO: message, specialized request & responses.
-TODO: client, embeddable, light-weight and extensible (using tags)
-TODO: server, embeddable, request dispatcher & logging
+The design of the libraries require that the URI and protocol specific code
+belong in their own namespace  and in the relevant sub-directories (i.e.
+(i.e. ``http`` defined in ``protocol/http/`` and ``uri::http`` defined in
+``uri/http/``).
 
 
 .. include:: http/uri.rst

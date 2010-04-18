@@ -61,8 +61,6 @@ client library, but also an embeddable HTTP server template implementation. This
 allows new and existing applications to embed an HTTP server that exposed the
 application's function as a service over HTTP.
 
-.. include:: motivation.rst
-
 Overview
 --------
 
