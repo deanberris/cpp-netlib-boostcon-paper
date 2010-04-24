@@ -1,6 +1,6 @@
 
-Static-Dynamic
-``````````````
+Complementing Static and Dynamic Polymorphism
+`````````````````````````````````````````````
 
 With a header only library you can only do so much with static polymorphism
 alone. There are some situations where you have to handle dynamic polymorphism
@@ -29,7 +29,7 @@ this:
 
     template <class Tag>
     struct base {
-        virtual foo() = 0; // make this an abstract base
+        virtual void foo() = 0; // make this an abstract base
         virtual ~base() {
             // do the base destructor thing here.
         }
@@ -89,4 +89,3 @@ fluid. The only down-side to this is the possibility of derived type explosion
 in case there are a lot of different strategies or specializations available --
 this though is not unique to static-dynamic bridging, but is also a problem with
 pure object oriented programming with dynamic polymorphism.
-

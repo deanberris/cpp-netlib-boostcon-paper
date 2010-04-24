@@ -3,14 +3,14 @@ Directives
 ``````````
 
 The library also uses a technique for allowing message-passing semantics in a
-chain-able fashion in the form of directives. The basic concept for directives
-is in a general sense, it is an encapsulated transformation that can be applied
+chainable fashion in the form of directives. The basic concept for directives
+is, in a general sense, an encapsulated transformation that can be applied
 to objects that abide by the directive protocol.
 
 Using the object-oriented notion of message passing, where an object accepts a
-message (usually a function call) we define a simple DSEL [#]_ for the protocol
-to be supported by certain object types. In cpp-netlib the protocol implemented
-is similar to that of the standard iostream formatting system:
+message (usually a function call) we define a simple DSEL [#]_ in order for the
+protocol to be supported by certain object types. In cpp-netlib the protocol
+implemented is similar to that of the standard iostream formatting system:
 
 .. [#] Domain Specific Embedded Language
 
@@ -21,7 +21,7 @@ is similar to that of the standard iostream formatting system:
            ...
            << directiveN(...);
 
-In cpp-netlib the directives are simply function objects that take a target 
+In cpp-netlib the directives are simple function objects that take a target 
 object as reference and returns a reference to the same object as a result. In 
 code the directive pattern looks like the following:
 

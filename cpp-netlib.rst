@@ -42,7 +42,7 @@ demanded, among which include:
 
   * libcurl [#]_
   * C++ Sockets Library [#]_
-  * Necko [#]_
+  * Mozilla Necko [#]_
   * Qt [#]_
 
 However there were none that provided high level application

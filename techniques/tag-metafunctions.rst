@@ -2,13 +2,13 @@
 Tag Metafunctions
 `````````````````
 
-Sometimes you want to vary a function or a type's behavior based on a statically
-defined input. In cpp-netlib there are a number of things you might want to
-change based on some statically defined inputs -- like what the string type to
-be used should be, how large a buffer should be, among other things. The primary
+Sometimes you want to vary a function or a type's behavior based on a static
+parameter. In cpp-netlib there are a number of things you might want to
+change based on some such parameter -- like what the underlying string type
+should be and how large a buffer should be, among other things. The primary
 way to define this in a header-only manner is to use tag-based metafunctions.
 
-The skeleton of the approach hinges on a similar technique for defining type
+The skeleton of the approach is based on a similar technique for defining type
 traits [#]_. In cpp-netlib however the type traits are defined on opaque tag
 types which serve to associate results to a family of metafunctions.
 
@@ -64,7 +64,7 @@ families can be defined on tags where they are supported and ignored in cases
 where they are not.
 
 To illustrate let's define a new tag ``swappable``. Given the above definition 
-of ``foo``, we'd want to make the ``swappable``-tagged ``foo`` define a ``swap`` 
+of ``foo``, we want to make the ``swappable``-tagged ``foo`` define a ``swap`` 
 function that extends the original ``default_``-tagged ``foo``. In code this 
 would look like:
 
@@ -93,10 +93,10 @@ Overall what the tag-based definition approach allows is for static definition
 of extension points that ensures type-safety and invariants. This keeps the
 whole extension mechanism static and yet flexible.
 
-The only drawback with this approach is the verbosity at which extensions and
+One drawback with this approach is the verbosity at which extensions and
 specializations are to be done which introduces additional pressure on the
 compiler at compile-time computations. Because this technique relies heavily on
-the C++ template mechanism, compile times may be greatly affected.
+the C++ template mechanism, compile times may be greatly increased.
 
 The potential for tag and implementation explosion is also high. If the
 implementor is not careful in controlling the number of tags and type functions
