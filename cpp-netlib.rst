@@ -1,8 +1,9 @@
 ======================================================================
 Techniques in Flexible Header-Only C++ Network Library Implementations
 ======================================================================
-:Author: Dean Michael Berris <mikhailberis@gmail.com>, 
-         Glyn Matthews <glyn.matthews@gmail.com>
+:Authors: Dean Michael Berris <mikhailberis@gmail.com> 
+
+          Glyn Matthews <glyn.matthews@gmail.com>
 :Date: April 8, 2010
 :Description: A look into the techniques used in the cpp-netlib implementation.
 
