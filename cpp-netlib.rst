@@ -56,7 +56,10 @@ as header-only C++ components. This meant that the code would rely on template
 metaprogramming and as much static polymorphism [#]_ as possible to achieve the
 same level of quality that the dynamic non-header-only libraries were providing.
 
-.. [#] TODO: find link or explain static polymorphism.
+.. [#] Static polymorphism is a kind of polymorphism which occurs at compile
+       time that allows types or users of the type to determine their form or
+       function while being compiled. There are many examples of static
+       polymorphism that use template metaprogramming.
 
 Another stated goal of the library is to keep the API of the components simple
 and straight forward. In the initial survey of network libraries available for
