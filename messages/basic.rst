@@ -1,6 +1,7 @@
 The default implementation of a simple type that models the Message Concept is
-available in cpp-netlib named ``basic_message`` which supports a ``Tag``
-template parameter. The definition of ``basic_message`` looks like this:
+available in cpp-netlib. This default implementation is named ``basic_message``
+which supports a ``Tag`` template parameter. The definition of ``basic_message`` 
+looks like this:
 
 ::
 

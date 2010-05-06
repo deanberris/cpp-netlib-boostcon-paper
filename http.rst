@@ -1,6 +1,6 @@
 
 The cpp-netlib provides full support for a configurable, embedded HTTP client 
-nd server.
+and server.
 
 The design of the libraries require that the URI and protocol specific code
 belong in their own namespace  and in the relevant sub-directories (i.e.

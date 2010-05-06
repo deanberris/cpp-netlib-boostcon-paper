@@ -2,7 +2,7 @@
 Complementing Static and Dynamic Polymorphism
 `````````````````````````````````````````````
 
-With a header only library you can only do so much with static polymorphism
+With a header only library, you can only do so much with static polymorphism
 alone. There are some situations where you have to handle dynamic polymorphism
 because of unavoidable runtime-based decision making. Although you can deal with
 the base types that remain static, behavior can vary greatly which derived type
@@ -53,15 +53,11 @@ an input, we create a strategy factory function:
         return ptr;
     }
 
-The strategy factory function looks like this:
-
-::
-
     unique_ptr<base<default_> > ptr =
         strategy(input, default_()); // input is a runtime value
 
 The strategy factory can be a standalone function, or a static member of a
-factory class that is specialized by tag dispatch. This can be done as the
+factory class that is specialized by tag dispatch. This can be done like the
 following:
 
 ::

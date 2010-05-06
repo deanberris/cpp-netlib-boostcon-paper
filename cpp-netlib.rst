@@ -29,7 +29,7 @@ Introduction
 
 The cpp-netlib project started on May 20, 2007 when the first check-in was
 recorded on the public Sourceforge subversion repository. The objectives of the 
-project was to develop a C++ library that:
+project was to develop a C++ networking library that:
 
   * Is of high quality, portable, and easy to use.
 

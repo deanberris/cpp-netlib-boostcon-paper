@@ -2,7 +2,7 @@
 One of the core components in the library is the concept and the implementation
 of a common message type. In most (not all) network protocols, the concept of a
 message is central to the definition of the protocol. In HTTP, SMTP, XMPP, and
-even other protocols like SNMP and ICMP there is a common notion of a "packet"
+even other protocols like SNMP and ICMP, there is a common notion of a "packet"
 or a message. In cpp-netlib we chose to implement the concept of a message that
 has the following common parts:
 
@@ -21,7 +21,7 @@ has the following common parts:
 
 This division is purely logical -- in the underlying implementation, the message
 type can choose to have different means of storing the data, dependinn on the
-type used to tag the message. The section covers the `Message Concept`_ as well
+type used to tag the message. This section covers the `Message Concept`_ as well
 as the `Basic Message`_ implementation.
 
 
