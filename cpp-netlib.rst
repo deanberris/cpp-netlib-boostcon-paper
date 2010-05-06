@@ -88,7 +88,7 @@ application's function as a service over HTTP.
 Overview
 --------
 
-The document has 4 sections which cover different parts of the library. These
+The document has 5 sections which cover different parts of the library. These
 sections are:
 
   * Techniques_ -- covers the different general techniques applied throughout
@@ -99,6 +99,10 @@ sections are:
     client and server implementations, the message concept, and how to create
     specific messages for different protocols (even those that are not inherently
     message based).
+
+  * Transformations_ -- covers how transformations on messages work, the
+    directive system, and how to implement your own message transformation
+    routines.
 
   * Protocols_ -- covers the different protocol implementations already released
     as part of the library, as well as those still to be supported.
@@ -120,10 +124,31 @@ Messages
 
 .. include:: messages.rst
 
+Transformations
+---------------
+
+.. include:: transformations.rst
+
 Protocols
 ---------
 
 .. include:: protocols.rst
+
+HTTP
+````
+
+.. include:: http.rst
+
+SMTP
+````
+
+.. include:: smtp.rst
+
+XMPP
+````
+
+.. include:: xmpp.rst
+
 
 Pitfalls
 --------
